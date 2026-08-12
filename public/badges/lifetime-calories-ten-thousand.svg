@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-calories-ten-thousand" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1b0000;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#3e2723;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-calories-ten-thousand">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#ff6f00" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-calories-ten-thousand)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#ff6f00" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-calories-ten-thousand)">
+    <rect x="95" y="95" width="10" height="50" fill="#8d6e63" rx="3"/>
+   <path d="M85 95 L115 95 L110 100 L90 100 Z" fill="#a1887f"/>
+   <path d="M100 95 Q85 75 88 55 Q90 40 100 30 Q110 40 112 55 Q115 75 100 95 Z" fill="#ff5722"/>
+   <path d="M100 90 Q90 75 92 60 Q94 48 100 38 Q106 48 108 60 Q110 75 100 90 Z" fill="#ff9800"/>
+   <path d="M100 82 Q94 72 96 62 Q98 52 100 45 Q102 52 104 62 Q106 72 100 82 Z" fill="#ffc107"/>
+   <path d="M100 72 Q97 65 99 58 Q100 52 101 58 Q103 65 100 72 Z" fill="#ffeb3b"/>
+   <text x="100" y="155" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#ffcc80">10,000 cal</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#ff6f00" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">TEN THOUSAND TORCH</text>
+</svg>

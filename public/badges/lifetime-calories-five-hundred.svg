@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-calories-five-hundred" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff8e1;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffecb3;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-calories-five-hundred">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#f57f17" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-calories-five-hundred)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#f57f17" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-calories-five-hundred)">
+    <rect x="95" y="100" width="10" height="35" fill="#ffe082" stroke="#f9a825" stroke-width="1" rx="2"/>
+   <path d="M100 100 Q93 85 97 70 Q100 60 100 55 Q100 60 103 70 Q107 85 100 100 Z" fill="#ff9800"/>
+   <path d="M100 100 Q95 88 98 78 Q100 70 100 65 Q100 70 102 78 Q105 88 100 100 Z" fill="#ffc107"/>
+   <path d="M100 95 Q97 88 99 80 Q100 75 101 80 Q103 88 100 95 Z" fill="#ffeb3b"/>
+   <rect x="90" y="135" width="20" height="5" rx="2" fill="#8d6e63"/>
+   <text x="100" y="55" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#e65100">500</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#f57f17" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">FIRST FIVE HUNDRED</text>
+</svg>

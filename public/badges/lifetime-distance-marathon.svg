@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-distance-marathon" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fffde7;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#fff59d;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-distance-marathon">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#f9a825" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-distance-marathon)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#f9a825" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-distance-marathon)">
+    <circle cx="100" cy="95" r="35" fill="#fdd835" stroke="#f9a825" stroke-width="3"/>
+   <circle cx="100" cy="95" r="28" fill="none" stroke="#f57f17" stroke-width="2"/>
+   <text x="100" y="100" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#e65100">42.2</text>
+   <text x="100" y="115" text-anchor="middle" font-family="Arial" font-size="8" fill="#bf360c">KILOMETRES</text>
+   <path d="M85 55 L100 60 L115 55" fill="none" stroke="#f9a825" stroke-width="3"/>
+   <path d="M80 50 L85 55 M120 50 L115 55" stroke="#f9a825" stroke-width="2" fill="none"/>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#f9a825" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">MARATHON LEGEND</text>
+</svg>

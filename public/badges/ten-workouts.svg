@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-ten-workouts" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ede7f6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ce93d8;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-ten-workouts">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#6a1b9a" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-ten-workouts)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#6a1b9a" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-ten-workouts)">
+    <ellipse cx="134.0" cy="88.0" rx="8" ry="5" fill="#ab47bc" transform="rotate(0 134.0 88.0)"/>
+   <ellipse cx="127.5" cy="108.0" rx="8" ry="5" fill="#ab47bc" transform="rotate(36 127.5 108.0)"/>
+   <ellipse cx="110.5" cy="120.3" rx="8" ry="5" fill="#ab47bc" transform="rotate(72 110.5 120.3)"/>
+   <ellipse cx="89.5" cy="120.3" rx="8" ry="5" fill="#ab47bc" transform="rotate(108 89.5 120.3)"/>
+   <ellipse cx="72.5" cy="108.0" rx="8" ry="5" fill="#ab47bc" transform="rotate(144 72.5 108.0)"/>
+   <ellipse cx="66.0" cy="88.0" rx="8" ry="5" fill="#ab47bc" transform="rotate(180 66.0 88.0)"/>
+   <ellipse cx="72.5" cy="68.0" rx="8" ry="5" fill="#ab47bc" transform="rotate(216 72.5 68.0)"/>
+   <ellipse cx="89.5" cy="55.7" rx="8" ry="5" fill="#ab47bc" transform="rotate(252 89.5 55.7)"/>
+   <ellipse cx="110.5" cy="55.7" rx="8" ry="5" fill="#ab47bc" transform="rotate(288 110.5 55.7)"/>
+   <ellipse cx="127.5" cy="68.0" rx="8" ry="5" fill="#ab47bc" transform="rotate(324 127.5 68.0)"/>
+   <circle cx="100" cy="88" r="22" fill="#ce93d8" stroke="#6a1b9a" stroke-width="2"/>
+   <circle cx="100" cy="88" r="17" fill="white"/>
+   <text x="100" y="84" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#4a148c">10</text>
+   <text x="100" y="97" text-anchor="middle" font-family="Arial" font-size="7" fill="#6a1b9a">WORKOUTS</text>
+   <text x="100" y="148" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#6a1b9a">TEN WORKOUTS</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#6a1b9a" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">TEN WORKOUTS</text>
+</svg>

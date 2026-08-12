@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-elevation-ben-nevis" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#eceff1;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#cfd8dc;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-elevation-ben-nevis">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#37474f" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-elevation-ben-nevis)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#37474f" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-elevation-ben-nevis)">
+    <path d="M20 145 L60 95 L85 80 L100 55 L115 80 L140 95 L180 145 Z" fill="#546e7a"/>
+   <path d="M20 145 L60 95 L85 80 L100 55" fill="#78909c"/>
+   <path d="M90 60 L100 55 L110 60 L105 58 L100 62 L95 58 Z" fill="white"/>
+   <path d="M40 120 Q65 115 90 120" fill="white" opacity="0.4"/>
+   <path d="M110 110 Q135 105 160 115" fill="white" opacity="0.3"/>
+   <text x="100" y="135" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">1,345m</text>
+   <text x="100" y="148" text-anchor="middle" font-family="Arial" font-size="7" fill="#cfd8dc">Scotland</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#37474f" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">BEN NEVIS CONQUEROR</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-calories-one-hundred-fifty-thousand" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1b0000;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#4a0000;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-calories-one-hundred-fifty-thousand">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#ff3d00" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-calories-one-hundred-fifty-thousand)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#ff3d00" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-calories-one-hundred-fifty-thousand)">
+    <circle cx="100" cy="90" r="35" fill="none" stroke="#ff3d00" stroke-width="8"/>
+   <circle cx="100" cy="90" r="35" fill="none" stroke="#ff8f00" stroke-width="4"/>
+   <path d="M135.0 90.0 Q124.5 82.0 129.8 90.0" fill="none" stroke="#ffc400" stroke-width="2"/>
+   <path d="M130.3 107.5 Q121.2 94.3 125.8 104.9" fill="none" stroke="#ffc400" stroke-width="2"/>
+   <path d="M117.5 120.3 Q112.3 103.2 114.9 115.8" fill="none" stroke="#ffc400" stroke-width="2"/>
+   <path d="M100.0 125.0 Q100.0 106.5 100.0 119.8" fill="none" stroke="#ffc400" stroke-width="2"/>
+   <path d="M82.5 120.3 Q87.8 103.2 85.1 115.8" fill="none" stroke="#ffc400" stroke-width="2"/>
+   <path d="M69.7 107.5 Q78.8 94.3 74.2 104.9" fill="none" stroke="#ffc400" stroke-width="2"/>
+   <path d="M65.0 90.0 Q75.5 82.0 70.3 90.0" fill="none" stroke="#ffc400" stroke-width="2"/>
+   <path d="M69.7 72.5 Q78.8 69.8 74.2 75.1" fill="none" stroke="#ffc400" stroke-width="2"/>
+   <path d="M82.5 59.7 Q87.7 60.8 85.1 64.2" fill="none" stroke="#ffc400" stroke-width="2"/>
+   <path d="M100.0 55.0 Q100.0 57.5 100.0 60.3" fill="none" stroke="#ffc400" stroke-width="2"/>
+   <path d="M117.5 59.7 Q112.3 60.8 114.9 64.2" fill="none" stroke="#ffc400" stroke-width="2"/>
+   <path d="M130.3 72.5 Q121.2 69.7 125.8 75.1" fill="none" stroke="#ffc400" stroke-width="2"/>
+   <text x="100" y="88" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#ffd54f">150K</text>
+   <text x="100" y="102" text-anchor="middle" font-family="Arial" font-size="8" fill="#ffab00">INFERNO</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#ff3d00" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">INFERNO LEGEND</text>
+</svg>

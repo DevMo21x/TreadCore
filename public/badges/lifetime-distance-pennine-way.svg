@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-distance-pennine-way" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f5e9;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c8e6c9;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-distance-pennine-way">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#2e7d32" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-distance-pennine-way)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#2e7d32" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-distance-pennine-way)">
+    <path d="M20 130 Q50 100 80 115 Q110 130 140 105 Q160 90 180 100" fill="#a5d6a7" stroke="none"/>
+   <path d="M20 140 Q60 115 100 125 Q140 135 180 115" fill="#81c784" stroke="none"/>
+   <rect x="95" y="70" width="4" height="40" fill="#5d4037"/>
+   <rect x="87" y="65" width="20" height="14" fill="#ffeb3b" stroke="#f9a825" stroke-width="1" rx="2"/>
+   <path d="M99 72 L107 72" stroke="#2e7d32" stroke-width="2"/>
+   <text x="100" y="55" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#1b5e20">431km</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#2e7d32" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">PENNINE WAY PATHFINDER</text>
+</svg>

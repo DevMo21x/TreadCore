@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-five-workouts" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8eaf6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c5cae9;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-five-workouts">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#283593" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-five-workouts)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#283593" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-five-workouts)">
+    <polygon points="38,76 43,86 53,86 46,93 48,104 38,98 28,104 30,93 23,86 33,86" fill="#fdd835" stroke="#f9a825" stroke-width="1"/>
+   <polygon points="69,76 74,86 84,86 77,93 79,104 69,98 59,104 61,93 54,86 64,86" fill="#fdd835" stroke="#f9a825" stroke-width="1"/>
+   <polygon points="100,76 105,86 115,86 108,93 110,104 100,98 90,104 92,93 85,86 95,86" fill="#fdd835" stroke="#f9a825" stroke-width="1"/>
+   <polygon points="131,76 136,86 146,86 139,93 141,104 131,98 121,104 123,93 116,86 126,86" fill="#fdd835" stroke="#f9a825" stroke-width="1"/>
+   <polygon points="162,76 167,86 177,86 170,93 172,104 162,98 152,104 154,93 147,86 157,86" fill="#fdd835" stroke="#f9a825" stroke-width="1"/>
+   <text x="100" y="125" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#283593">5 WORKOUTS</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#283593" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">FIVE WORKOUTS</text>
+</svg>

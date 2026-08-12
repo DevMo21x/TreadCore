@@ -1,0 +1,13 @@
+* text=auto eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.gif binary
+*.exe binary
+*.zip binary
+
+# Explicitly handle line-ending-sensitive files
+*.sh eol=lf
+*.bat eol=crlf
+*.ps1 eol=crlf

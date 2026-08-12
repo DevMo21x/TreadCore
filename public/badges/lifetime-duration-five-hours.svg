@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-duration-five-hours" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff3e0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffe0b2;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-duration-five-hours">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#e65100" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-duration-five-hours)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#e65100" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-duration-five-hours)">
+    <path d="M75 55 L125 55 L105 90 L125 125 L75 125 L95 90 Z" fill="#fff8e1" stroke="#e65100" stroke-width="3"/>
+   <path d="M80 58 L120 58 L105 85 Z" fill="#ffb74d" opacity="0.6"/>
+   <path d="M95 95 L80 122 L120 122 Z" fill="#ffb74d" opacity="0.8"/>
+   <rect x="93" y="87" width="14" height="6" fill="#ff9800" rx="3"/>
+   <line x1="75" y1="55" x2="125" y2="55" stroke="#bf360c" stroke-width="3" stroke-linecap="round"/>
+   <line x1="75" y1="125" x2="125" y2="125" stroke="#bf360c" stroke-width="3" stroke-linecap="round"/>
+   <text x="100" y="145" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#bf360c">5 HOURS</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#e65100" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">FIVE HOUR MILESTONE</text>
+</svg>

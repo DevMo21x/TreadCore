@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-distance-great-wall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffebee;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffcdd2;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-distance-great-wall">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#b71c1c" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-distance-great-wall)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#b71c1c" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-distance-great-wall)">
+    <path d="M25 120 L45 105 L65 110 L85 95 L105 100 L125 85 L145 90 L165 75 L180 80" fill="none" stroke="#795548" stroke-width="6"/>
+   <path d="M25 120 L45 105 L65 110 L85 95 L105 100 L125 85 L145 90 L165 75 L180 80" fill="none" stroke="#a1887f" stroke-width="3"/>
+   <rect x="43" y="98" width="6" height="10" fill="#6d4c41"/>
+   <rect x="83" y="88" width="6" height="10" fill="#6d4c41"/>
+   <rect x="123" y="78" width="6" height="10" fill="#6d4c41"/>
+   <rect x="163" y="68" width="6" height="10" fill="#6d4c41"/>
+   <text x="100" y="140" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#b71c1c">2,000km</text>
+   <path d="M50 50 Q55 45 60 50 Q65 45 70 50 Q75 45 80 50" fill="none" stroke="#ef9a9a" stroke-width="1.5"/>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#b71c1c" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">GREAT WALL VOYAGER</text>
+</svg>

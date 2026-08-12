@@ -1,0 +1,207 @@
+/* =============================================================================
+ * GLOBAL STYLES
+ * =============================================================================
+ * This file imports Tailwind CSS and defines global CSS custom properties.
+ *
+ * Tailwind CSS v4 uses CSS-based configuration with the @theme directive.
+ * Customize your design tokens (colors, fonts, spacing, etc.) here.
+ *
+ * STUDENT: Modify the CSS variables below to match your project's branding.
+ * See /docs/styling.md for guidance on customizing Tailwind CSS.
+ * ============================================================================= */
+
+@import 'tailwindcss';
+
+/* --- Design Tokens --- */
+/* These CSS custom properties define your app's color palette.
+   Change these to match your project's brand. */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --muted: #f5f5f5;
+  --muted-foreground: #737373;
+  --border: #e5e5e5;
+}
+
+/* --- Tailwind Theme Integration --- */
+/* The @theme directive maps CSS variables to Tailwind utility classes.
+   After defining a color here, you can use it as: bg-primary, text-muted, etc. */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --font-sans: var(--font-inter);
+  --font-hyper-grid: var(--font-space-grotesk);
+}
+
+/* --- Dark Mode --- */
+/* STUDENT: Dark mode is an enhancement. Uncomment and customize the
+   dark mode colors below when you're ready to implement it.
+   See /docs/styling.md and STRETCH_GOALS.md for guidance. */
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --primary: #3b82f6;
+    --primary-foreground: #ffffff;
+    --muted: #262626;
+    --muted-foreground: #a3a3a3;
+    --border: #404040;
+  }
+}
+*/
+
+/* --- Base Styles --- */
+
+/* Touch target optimization for 1920x1200 touchscreen display */
+button,
+a {
+  touch-action: manipulation;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+.hyper-grid-theme {
+  --hg-background: #131313;
+  --hg-surface: #131313;
+  --hg-surface-panel: rgba(32, 31, 31, 0.5);
+  --hg-surface-soft: rgba(19, 19, 19, 0.6);
+  --hg-surface-high: #2a2a2a;
+  --hg-text: #e5e2e1;
+  --hg-muted: #cbc3d9;
+  --hg-primary: #d0bcff;
+  --hg-primary-strong: #7d3cff;
+  --hg-primary-tint: rgba(125, 60, 255, 0.12);
+  --hg-primary-glow: rgba(125, 60, 255, 0.28);
+  --hg-primary-focus-ring: rgba(208, 188, 255, 0.12);
+  --hg-secondary: #bdf4ff;
+  --hg-secondary-strong: #00e3fd;
+  --hg-secondary-tint: rgba(0, 227, 253, 0.12);
+  --hg-secondary-glow: rgba(0, 227, 253, 0.18);
+  --hg-secondary-focus-ring: rgba(189, 244, 255, 0.1);
+  --hg-tertiary: #ffb2ba;
+  --hg-tertiary-strong: #d6004a;
+  --hg-glass-border: rgba(255, 255, 255, 0.15);
+  --hg-white-overlay-subtle: rgba(255, 255, 255, 0.04);
+  --hg-shadow-depth: rgba(0, 0, 0, 0.18);
+  --hg-shadow-panel: rgba(0, 0, 0, 0.28);
+  --hg-shadow-hero: rgba(0, 0, 0, 0.36);
+  --hg-overlay-line: rgba(255, 255, 255, 0.05);
+  --hg-border-soft: rgba(255, 255, 255, 0.1);
+  --hg-border-subtle: rgba(255, 255, 255, 0.05);
+  --hg-divider: rgba(255, 255, 255, 0.15);
+  --hg-separator: rgba(255, 255, 255, 0.2);
+  --hg-interactive-soft: rgba(255, 255, 255, 0.05);
+  --hg-interactive-muted: rgba(255, 255, 255, 0.1);
+  --hg-interactive-strong: rgba(255, 255, 255, 0.2);
+  --hg-disabled-text: rgba(229, 226, 225, 0.3);
+  --hg-header-surface: rgba(19, 19, 19, 0.6);
+  --hg-chart-grid: rgba(255, 255, 255, 0.05);
+  --hg-tooltip-surface: rgba(0, 0, 0, 0.8);
+  --hg-success-bg: rgba(16, 185, 129, 0.2);
+  --hg-success-border: rgba(52, 211, 153, 0.3);
+  --hg-success-text: #a7f3d0;
+  background:
+    radial-gradient(circle at top right, rgba(125, 60, 255, 0.16), transparent 28%),
+    radial-gradient(circle at top left, rgba(0, 227, 253, 0.12), transparent 24%),
+    linear-gradient(180deg, #181717 0%, #131313 100%);
+  color: var(--hg-text);
+}
+
+.hyper-grid-theme.light {
+  --hg-background: #f4f2ff;
+  --hg-surface: #f4f2ff;
+  --hg-surface-panel: rgba(255, 255, 255, 0.75);
+  --hg-surface-soft: rgba(240, 238, 255, 0.8);
+  --hg-surface-high: #e4dfff;
+  --hg-text: #1a1625;
+  --hg-muted: #5c5470;
+  --hg-primary: #7d3cff;
+  --hg-primary-strong: #5b20cc;
+  --hg-primary-tint: rgba(125, 60, 255, 0.14);
+  --hg-primary-glow: rgba(125, 60, 255, 0.18);
+  --hg-primary-focus-ring: rgba(125, 60, 255, 0.12);
+  --hg-secondary: #0097b2;
+  --hg-secondary-strong: #006f87;
+  --hg-secondary-tint: rgba(0, 151, 178, 0.12);
+  --hg-secondary-glow: rgba(0, 151, 178, 0.16);
+  --hg-secondary-focus-ring: rgba(0, 151, 178, 0.12);
+  --hg-tertiary: #b8003a;
+  --hg-tertiary-strong: #8a0029;
+  --hg-glass-border: rgba(0, 0, 0, 0.12);
+  --hg-white-overlay-subtle: rgba(0, 0, 0, 0.04);
+  --hg-shadow-depth: rgba(0, 0, 0, 0.08);
+  --hg-shadow-panel: rgba(0, 0, 0, 0.16);
+  --hg-shadow-hero: rgba(0, 0, 0, 0.22);
+  --hg-overlay-line: rgba(0, 0, 0, 0.04);
+  --hg-border-soft: rgba(26, 22, 37, 0.12);
+  --hg-border-subtle: rgba(26, 22, 37, 0.08);
+  --hg-divider: rgba(26, 22, 37, 0.14);
+  --hg-separator: rgba(26, 22, 37, 0.18);
+  --hg-interactive-soft: rgba(125, 60, 255, 0.1);
+  --hg-interactive-muted: rgba(125, 60, 255, 0.12);
+  --hg-interactive-strong: rgba(125, 60, 255, 0.18);
+  --hg-disabled-text: rgba(92, 84, 112, 0.55);
+  --hg-header-surface: rgba(255, 255, 255, 0.72);
+  --hg-chart-grid: rgba(26, 22, 37, 0.05);
+  --hg-tooltip-surface: rgba(255, 255, 255, 0.95);
+  --hg-success-bg: rgba(16, 185, 129, 0.12);
+  --hg-success-border: rgba(5, 150, 105, 0.2);
+  --hg-success-text: #047857;
+  background:
+    radial-gradient(circle at top right, rgba(125, 60, 255, 0.14), transparent 28%),
+    radial-gradient(circle at top left, rgba(0, 151, 178, 0.12), transparent 24%),
+    linear-gradient(180deg, #ffffff 0%, #f4f2ff 100%);
+}
+
+.hyper-grid-overlay {
+  background-image:
+    linear-gradient(var(--hg-overlay-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--hg-overlay-line) 1px, transparent 1px);
+  background-size: 96px 96px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), transparent);
+  opacity: 0.08;
+}
+
+.glass-panel {
+  background: var(--hg-surface-panel);
+  border: 1px solid var(--hg-glass-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.pulse-indicator {
+  animation: hyper-grid-pulse 1.6s ease-in-out infinite;
+}
+
+.text-shadow-neon-cyan {
+  text-shadow: 0 0 18px rgba(0, 227, 253, 0.38);
+}
+
+.text-shadow-neon-violet {
+  text-shadow: 0 0 18px rgba(125, 60, 255, 0.38);
+}
+
+@keyframes hyper-grid-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    box-shadow: 0 0 0 currentColor;
+  }
+
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 8px currentColor;
+  }
+}

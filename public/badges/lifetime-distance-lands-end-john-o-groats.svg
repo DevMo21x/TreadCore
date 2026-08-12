@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-distance-lands-end-john-o-groats" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8eaf6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c5cae9;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-distance-lands-end-john-o-groats">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#283593" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-distance-lands-end-john-o-groats)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#283593" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-distance-lands-end-john-o-groats)">
+    <path d="M95 40 Q92 50 88 55 Q85 60 90 65 Q95 68 93 75 Q90 80 92 85 Q95 88 93 95 Q90 100 93 105 Q97 108 95 115 Q92 120 95 125 Q100 130 98 135 Q95 140 100 145" fill="none" stroke="#3f51b5" stroke-width="8" stroke-linecap="round" opacity="0.3"/>
+   <circle cx="98" cy="143" r="5" fill="#f44336"/>
+   <circle cx="95" cy="42" r="5" fill="#4caf50"/>
+   <path d="M98 143 Q95 120 93 105 Q92 90 95 75 Q93 60 95 42" fill="none" stroke="#ff5722" stroke-width="2" stroke-dasharray="4,3"/>
+   <text x="125" cy="143" font-family="Arial" font-size="7" fill="#283593">Land's End</text>
+   <text x="110" y="45" font-family="Arial" font-size="7" fill="#283593">John o' Groats</text>
+   <text x="100" y="155" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1a237e">1,407km</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#283593" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">LAND'S END TO JoG</text>
+</svg>

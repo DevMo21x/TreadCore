@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-calories-seventy-five-thousand" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#311b92;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#4527a0;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-calories-seventy-five-thousand">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#ff6d00" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-calories-seventy-five-thousand)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#ff6d00" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-calories-seventy-five-thousand)">
+    <path d="M65 90 Q65 75 80 75 L120 75 Q135 75 135 90 Q135 105 120 105 L80 105 Q65 105 65 90 Z" fill="#ff8f00"/>
+   <path d="M80 80 L85 80 L85 100 L80 100 Z M90 78 L95 78 L95 100 L90 100 Z M100 78 L105 78 L105 100 L100 100 Z M110 80 L115 80 L115 100 L110 100 Z" fill="#ffab40" rx="2"/>
+   <path d="M70 100 L75 100 L75 105 L70 105 Z" fill="#ff6d00"/>
+   <path d="M55 85 Q58 80 62 85 M138 85 Q141 80 145 85 M55 95 Q58 100 62 95 M138 95 Q141 100 145 95" fill="none" stroke="#ffab00" stroke-width="2"/>
+   <text x="100" y="65" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#ffd54f">75,000</text>
+   <text x="100" y="130" text-anchor="middle" font-family="Arial" font-size="9" fill="#ce93d8">CRUSHER</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#ff6d00" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">CALORIE CRUSHER</text>
+</svg>

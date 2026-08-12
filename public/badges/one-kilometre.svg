@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-one-kilometre" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f5e9;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#81c784;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-one-kilometre">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#388e3c" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-one-kilometre)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#388e3c" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-one-kilometre)">
+    <rect x="97" y="70" width="6" height="65" fill="#795548" rx="2"/>
+   <rect x="82" y="65" width="36" height="20" fill="#4caf50" stroke="#2e7d32" stroke-width="2" rx="3"/>
+   <path d="M82 65 L100 58 L118 65" fill="#43a047" stroke="#2e7d32" stroke-width="1"/>
+   <text x="100" y="80" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="white">1 KM</text>
+   <path d="M30 125 Q55 115 75 120 Q90 124 100 120" fill="none" stroke="#a5d6a7" stroke-width="2" stroke-dasharray="5,3"/>
+   <path d="M100 120 Q115 116 135 120 Q155 124 175 118" fill="none" stroke="#a5d6a7" stroke-width="2" stroke-dasharray="5,3"/>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#388e3c" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">ONE KILOMETRE</text>
+</svg>

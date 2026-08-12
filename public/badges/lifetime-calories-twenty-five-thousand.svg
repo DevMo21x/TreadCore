@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-calories-twenty-five-thousand" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#212121;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#424242;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-calories-twenty-five-thousand">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#ff3d00" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-calories-twenty-five-thousand)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#ff3d00" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-calories-twenty-five-thousand)">
+    <rect x="60" y="70" width="80" height="70" fill="#616161" stroke="#757575" stroke-width="2" rx="5"/>
+   <rect x="70" y="80" width="60" height="40" rx="3" fill="#1a1a1a" stroke="#424242" stroke-width="1"/>
+   <path d="M80 120 Q85 105 90 110 Q95 100 100 108 Q105 98 110 108 Q115 100 120 110 Q125 105 130 120" fill="#ff3d00"/>
+   <path d="M85 120 Q90 110 95 115 Q100 105 105 113 Q110 105 115 112 Q120 108 125 120" fill="#ff9100"/>
+   <path d="M90 120 Q95 113 100 116 Q105 110 110 115 Q115 112 120 120" fill="#ffc400"/>
+   <rect x="65" y="68" width="70" height="5" fill="#9e9e9e" rx="2"/>
+   <text x="100" y="55" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#ff6e40">25,000</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#ff3d00" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">FURNACE MODE</text>
+</svg>

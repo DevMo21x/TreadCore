@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-duration-endurance-elite" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a237e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#283593;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-duration-endurance-elite">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#7c4dff" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-duration-endurance-elite)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#7c4dff" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-duration-endurance-elite)">
+    <polygon points="100,50 130,80 100,130 70,80" fill="#7c4dff" stroke="#b388ff" stroke-width="2"/>
+   <polygon points="100,50 115,80 100,95 85,80" fill="#b388ff" opacity="0.5"/>
+   <path d="M70 80 L100 50 L130 80" fill="none" stroke="#d1c4e9" stroke-width="1"/>
+   <text x="100" y="108" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">750</text>
+   <text x="100" y="120" text-anchor="middle" font-family="Arial" font-size="8" fill="#d1c4e9">HOURS</text>
+   <polygon points="100,45 103,48 100,50 97,48" fill="#ffd54f"/>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#7c4dff" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">ENDURANCE ELITE</text>
+</svg>

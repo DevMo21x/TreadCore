@@ -1,0 +1,13 @@
+{
+  "entryPoints": ["src"],
+  "entryPointStrategy": "expand",
+  "out": "out",
+  "excludeExternals": true,
+  "excludeInternal": false,
+  "excludePrivate": false,
+  "excludeNotDocumentedKinds": ["Module", "Namespace"],
+  "validation": {
+    "notExported": false,
+    "invalidLink": false
+  }
+}

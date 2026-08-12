@@ -1,0 +1,7 @@
+{
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "chat.tools.terminal.autoApprove": {
+    "gh": true
+  }
+}

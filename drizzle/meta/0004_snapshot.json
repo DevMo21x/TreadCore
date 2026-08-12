@@ -1,0 +1,262 @@
+{
+  "version": "6",
+  "dialect": "sqlite",
+  "id": "d1c66e21-7b45-47d3-a316-b619923077f3",
+  "prevId": "987b4795-092a-43f8-86f0-d5717632ea54",
+  "tables": {
+    "users": {
+      "name": "users",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "username": {
+          "name": "username",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "password": {
+          "name": "password",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false,
+          "default": "(unixepoch())"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "workout_metrics": {
+      "name": "workout_metrics",
+      "columns": {
+        "metric_id": {
+          "name": "metric_id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": true
+        },
+        "workout_id": {
+          "name": "workout_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "recorded_at": {
+          "name": "recorded_at",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "(strftime('%Y-%m-%d %H:%M:%f', 'now'))"
+        },
+        "elapsed_seconds": {
+          "name": "elapsed_seconds",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "speed_kmh": {
+          "name": "speed_kmh",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "incline_pct": {
+          "name": "incline_pct",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "distance_m": {
+          "name": "distance_m",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "idx_metrics_workout_recorded_at": {
+          "name": "idx_metrics_workout_recorded_at",
+          "columns": ["workout_id", "recorded_at"],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "workout_metrics_workout_id_workouts_workout_id_fk": {
+          "name": "workout_metrics_workout_id_workouts_workout_id_fk",
+          "tableFrom": "workout_metrics",
+          "tableTo": "workouts",
+          "columnsFrom": ["workout_id"],
+          "columnsTo": ["workout_id"],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "workout_metrics_speed_kmh_nonnegative": {
+          "name": "workout_metrics_speed_kmh_nonnegative",
+          "value": "\"workout_metrics\".\"speed_kmh\" is null or \"workout_metrics\".\"speed_kmh\" >= 0"
+        },
+        "workout_metrics_distance_m_nonnegative": {
+          "name": "workout_metrics_distance_m_nonnegative",
+          "value": "\"workout_metrics\".\"distance_m\" is null or \"workout_metrics\".\"distance_m\" >= 0"
+        }
+      }
+    },
+    "workouts": {
+      "name": "workouts",
+      "columns": {
+        "workout_id": {
+          "name": "workout_id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "start_time": {
+          "name": "start_time",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "(strftime('%Y-%m-%d %H:%M:%f', 'now'))"
+        },
+        "end_time": {
+          "name": "end_time",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "total_distance_km": {
+          "name": "total_distance_km",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": 0
+        },
+        "avg_speed_kmh": {
+          "name": "avg_speed_kmh",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": 0
+        },
+        "total_calories": {
+          "name": "total_calories",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": 0
+        },
+        "total_elevation_gain": {
+          "name": "total_elevation_gain",
+          "type": "real",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": 0
+        },
+        "xp_earned": {
+          "name": "xp_earned",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": 0
+        }
+      },
+      "indexes": {
+        "idx_workouts_user_id": {
+          "name": "idx_workouts_user_id",
+          "columns": ["user_id"],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "workouts_user_id_users_id_fk": {
+          "name": "workouts_user_id_users_id_fk",
+          "tableFrom": "workouts",
+          "tableTo": "users",
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "workouts_total_distance_km_nonnegative": {
+          "name": "workouts_total_distance_km_nonnegative",
+          "value": "\"workouts\".\"total_distance_km\" >= 0"
+        },
+        "workouts_avg_speed_kmh_nonnegative": {
+          "name": "workouts_avg_speed_kmh_nonnegative",
+          "value": "\"workouts\".\"avg_speed_kmh\" >= 0"
+        },
+        "workouts_total_calories_nonnegative": {
+          "name": "workouts_total_calories_nonnegative",
+          "value": "\"workouts\".\"total_calories\" >= 0"
+        },
+        "workouts_total_elevation_gain_nonnegative": {
+          "name": "workouts_total_elevation_gain_nonnegative",
+          "value": "\"workouts\".\"total_elevation_gain\" >= 0"
+        },
+        "workouts_end_time_after_start_time": {
+          "name": "workouts_end_time_after_start_time",
+          "value": "\"workouts\".\"end_time\" is null or \"workouts\".\"end_time\" >= \"workouts\".\"start_time\""
+        },
+        "workouts_xp_earned_nonnegative": {
+          "name": "workouts_xp_earned_nonnegative",
+          "value": "\"workouts\".\"xp_earned\" >= 0"
+        }
+      }
+    }
+  },
+  "views": {},
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  },
+  "internal": {
+    "indexes": {}
+  }
+}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-duration-one-week" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8eaf6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c5cae9;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-duration-one-week">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#1a237e" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-duration-one-week)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#1a237e" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-duration-one-week)">
+    <path d="M100 95 L60.0 95.0 A40 40 0 0 1 73.4 65.1 Z" fill="#f44336" opacity="0.7"/>
+   <path d="M100 95 L75.0 63.7 A40 40 0 0 1 106.8 55.6 Z" fill="#ff9800" opacity="0.7"/>
+   <path d="M100 95 L108.9 56.0 A40 40 0 0 1 135.1 75.7 Z" fill="#ffeb3b" opacity="0.7"/>
+   <path d="M100 95 L136.0 77.6 A40 40 0 0 1 136.9 110.4 Z" fill="#4caf50" opacity="0.7"/>
+   <path d="M100 95 L136.1 112.3 A40 40 0 0 1 111.0 133.5 Z" fill="#2196f3" opacity="0.7"/>
+   <path d="M100 95 L109.0 134.0 A40 40 0 0 1 76.8 127.6 Z" fill="#3f51b5" opacity="0.7"/>
+   <path d="M100 95 L75.2 126.3 A40 40 0 0 1 60.1 97.2 Z" fill="#9c27b0" opacity="0.7"/>
+   <circle cx="100" cy="95" r="20" fill="white"/>
+   <text x="100" y="100" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#1a237e">168h</text>
+   <text x="100" y="145" text-anchor="middle" font-family="Arial" font-size="10" fill="#283593">7 DAYS</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#1a237e" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">ONE WEEK WONDER</text>
+</svg>

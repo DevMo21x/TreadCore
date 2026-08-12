@@ -1,0 +1,17 @@
+{
+  "id": "preset-001",
+  "name": "Easy Walk",
+  "description": "A gentle 20 minute walk to warm up",
+  "author_id": null,
+  "visibility": "public",
+  "tags": ["walk", "warmup"],
+  "difficulty": "easy",
+  "segments": [
+    { "name": "Warmup", "duration_seconds": 600, "speed": 3.0, "incline": 0 },
+    { "name": "Steady", "duration_seconds": 900, "speed": 3.5, "incline": 0 },
+    { "name": "Cooldown", "duration_seconds": 300, "speed": 2.5, "incline": 0 }
+  ],
+  "total_duration_seconds": 1800,
+  "created_at": "2026-05-05T12:00:00Z",
+  "updated_at": "2026-05-05T12:00:00Z"
+}

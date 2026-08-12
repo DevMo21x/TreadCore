@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-duration-ten-hours" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#bbdefb;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-duration-ten-hours">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#0d47a1" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-duration-ten-hours)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#0d47a1" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-duration-ten-hours)">
+    <circle cx="100" cy="95" r="35" fill="white" stroke="#1565c0" stroke-width="4"/>
+   <circle cx="100" cy="95" r="30" fill="none" stroke="#bbdefb" stroke-width="2"/>
+   <rect x="97" y="55" width="6" height="10" rx="3" fill="#1565c0"/>
+   <path d="M90 50 L110 50" stroke="#0d47a1" stroke-width="2" stroke-linecap="round"/>
+   <text x="100" y="102" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#0d47a1">10:00</text>
+   <line x1="100" y1="95" x2="100" y2="70" stroke="#1976d2" stroke-width="2" stroke-linecap="round"/>
+   <line x1="100" y1="95" x2="118" y2="95" stroke="#42a5f5" stroke-width="1.5" stroke-linecap="round"/>
+   <circle cx="100" cy="95" r="2" fill="#0d47a1"/>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#0d47a1" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">TEN HOUR TENACITY</text>
+</svg>

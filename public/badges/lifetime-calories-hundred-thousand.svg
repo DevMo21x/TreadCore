@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-calories-hundred-thousand" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0000;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#330000;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-calories-hundred-thousand">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#ff6f00" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-calories-hundred-thousand)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#ff6f00" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-calories-hundred-thousand)">
+    <circle cx="100" cy="90" r="25" fill="#ff8f00"/>
+   <circle cx="100" cy="90" r="18" fill="#ffc107"/>
+   <circle cx="100" cy="90" r="10" fill="#ffeb3b"/>
+   <line x1="128.0" y1="90.0" x2="142.0" y2="90.0" stroke="#ff6f00" stroke-width="3" stroke-linecap="round"/>
+   <line x1="119.8" y1="109.8" x2="129.7" y2="119.7" stroke="#ff6f00" stroke-width="3" stroke-linecap="round"/>
+   <line x1="100.0" y1="118.0" x2="100.0" y2="132.0" stroke="#ff6f00" stroke-width="3" stroke-linecap="round"/>
+   <line x1="80.2" y1="109.8" x2="70.3" y2="119.7" stroke="#ff6f00" stroke-width="3" stroke-linecap="round"/>
+   <line x1="72.0" y1="90.0" x2="58.0" y2="90.0" stroke="#ff6f00" stroke-width="3" stroke-linecap="round"/>
+   <line x1="80.2" y1="70.2" x2="70.3" y2="60.3" stroke="#ff6f00" stroke-width="3" stroke-linecap="round"/>
+   <line x1="100.0" y1="62.0" x2="100.0" y2="48.0" stroke="#ff6f00" stroke-width="3" stroke-linecap="round"/>
+   <line x1="119.8" y1="70.2" x2="129.7" y2="60.3" stroke="#ff6f00" stroke-width="3" stroke-linecap="round"/>
+   <text x="100" y="95" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#bf360c">100K</text>
+   <text x="100" y="148" text-anchor="middle" font-family="Arial" font-size="9" fill="#ffab40">BLAZE</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#ff6f00" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">100K BLAZE</text>
+</svg>

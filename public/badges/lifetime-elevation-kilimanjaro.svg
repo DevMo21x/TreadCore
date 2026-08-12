@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-elevation-kilimanjaro" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff3e0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffcc80;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-elevation-kilimanjaro">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#e65100" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-elevation-kilimanjaro)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#e65100" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-elevation-kilimanjaro)">
+    <path d="M25 140 L55 80 L80 65 L120 65 L145 80 L175 140 Z" fill="#795548"/>
+   <path d="M70 70 L80 65 L120 65 L130 70 Q110 60 100 62 Q90 60 70 70 Z" fill="white"/>
+   <path d="M20 145 L180 145" stroke="#a1887f" stroke-width="2"/>
+   <path d="M30 142 Q35 138 40 142 M60 142 Q65 138 70 142 M130 142 Q135 138 140 142 M155 142 Q160 138 165 142" fill="none" stroke="#8d6e63" stroke-width="1.5"/>
+   <text x="100" y="105" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">5,895m</text>
+   <text x="100" y="155" text-anchor="middle" font-family="Arial" font-size="7" fill="#bf360c">Africa</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#e65100" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">KILIMANJARO CLIMBER</text>
+</svg>

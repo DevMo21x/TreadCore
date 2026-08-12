@@ -1,0 +1,1 @@
+ALTER TABLE `users` ADD `weight_kg` real;

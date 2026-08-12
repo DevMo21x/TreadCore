@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-fifteen-minutes" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff3e0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffb74d;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-fifteen-minutes">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#ef6c00" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-fifteen-minutes)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#ef6c00" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-fifteen-minutes)">
+    <circle cx="100" cy="90" r="34" fill="white" stroke="#e0e0e0" stroke-width="3"/>
+   <path d="M100 56 A34 34 0 0 1 134 90" fill="none" stroke="#ef6c00" stroke-width="6" stroke-linecap="round"/>
+   <circle cx="100" cy="90" r="24" fill="none" stroke="#fff3e0" stroke-width="2"/>
+   <line x1="100" y1="90" x2="100" y2="67" stroke="#ef6c00" stroke-width="2.5" stroke-linecap="round"/>
+   <line x1="100" y1="90" x2="116" y2="90" stroke="#ff9800" stroke-width="1.5" stroke-linecap="round"/>
+   <circle cx="100" cy="90" r="2.5" fill="#ef6c00"/>
+   <text x="100" y="97" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#e65100">15</text>
+   <text x="100" y="143" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#ef6c00">15 MINUTES</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#ef6c00" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">FIFTEEN MINUTES</text>
+</svg>

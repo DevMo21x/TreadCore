@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-calories-two-thousand-five-hundred" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3e2723;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#4e342e;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-calories-two-thousand-five-hundred">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#ff6f00" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-calories-two-thousand-five-hundred)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#ff6f00" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-calories-two-thousand-five-hundred)">
+    <ellipse cx="80" cy="115" rx="15" ry="10" fill="#d84315" opacity="0.8"/>
+   <ellipse cx="110" cy="110" rx="12" ry="9" fill="#bf360c" opacity="0.9"/>
+   <ellipse cx="95" cy="120" rx="18" ry="8" fill="#e65100" opacity="0.7"/>
+   <ellipse cx="120" cy="120" rx="10" ry="7" fill="#d84315" opacity="0.6"/>
+   <path d="M78 108 Q80 100 82 108" fill="#ff9800" opacity="0.8"/>
+   <path d="M108 103 Q110 95 112 103" fill="#ffb300" opacity="0.7"/>
+   <path d="M93 112 Q95 105 97 112" fill="#ff6f00" opacity="0.9"/>
+   <path d="M118 113 Q120 107 122 113" fill="#ff8f00" opacity="0.6"/>
+   <text x="100" y="80" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#ffcc80">2,500</text>
+   <text x="100" y="145" text-anchor="middle" font-family="Arial" font-size="9" fill="#ffab40">SLOW BURN</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#ff6f00" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">SLOW BURN</text>
+</svg>

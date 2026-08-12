@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-fifty-calories" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff8e1;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffe082;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-fifty-calories">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#f57f17" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-fifty-calories)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#f57f17" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-fifty-calories)">
+    <circle cx="100" cy="88" r="18" fill="#ff9800" opacity="0.15"/>
+   <path d="M100 110 Q90 98 92 85 Q94 75 100 68 Q106 75 108 85 Q110 98 100 110 Z" fill="#ff8f00"/>
+   <path d="M100 107 Q93 97 95 87 Q97 79 100 74 Q103 79 105 87 Q107 97 100 107 Z" fill="#ffc107"/>
+   <path d="M100 100 Q96 93 97 86 Q99 81 100 78 Q101 81 103 86 Q104 93 100 100 Z" fill="#ffeb3b"/>
+   <path d="M88 78 Q84 72 88 68 M112 78 Q116 72 112 68" fill="none" stroke="#ffb300" stroke-width="1.5" stroke-linecap="round"/>
+   <text x="100" y="130" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#e65100">50</text>
+   <text x="100" y="146" text-anchor="middle" font-family="Arial" font-size="9" fill="#f57f17">CALORIES</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#f57f17" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">FIFTY CALORIES</text>
+</svg>

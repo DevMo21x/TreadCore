@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-distance-south-west-coast" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e1f5fe;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#81d4fa;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-distance-south-west-coast">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#01579b" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-distance-south-west-coast)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#01579b" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-distance-south-west-coast)">
+    <path d="M20 110 L50 80 L70 90 L100 70 L130 85 L150 75 L180 90" fill="#8d6e63" stroke="#5d4037" stroke-width="2"/>
+   <path d="M20 120 Q50 115 80 120 Q110 125 140 118 Q160 113 180 120 L180 160 L20 160 Z" fill="#1976d2" opacity="0.6"/>
+   <path d="M30 125 Q45 120 60 125 Q75 130 90 124" fill="none" stroke="white" stroke-width="1.5" opacity="0.7"/>
+   <path d="M110 122 Q125 117 140 122 Q155 127 170 121" fill="none" stroke="white" stroke-width="1.5" opacity="0.7"/>
+   <circle cx="140" cy="50" r="12" fill="#ffeb3b" opacity="0.8"/>
+   <text x="100" y="148" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#01579b">630km</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#01579b" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">SW COAST PATH</text>
+</svg>

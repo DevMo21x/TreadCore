@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-calories-quarter-million" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#210000;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#4a0000;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-calories-quarter-million">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#ff5722" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-calories-quarter-million)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#ff5722" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-calories-quarter-million)">
+    <path d="M40 145 L75 100 L85 105 L100 55 L115 105 L125 100 L160 145 Z" fill="#5d4037"/>
+   <path d="M85 105 L100 55 L115 105 Q100 100 85 105 Z" fill="#bf360c"/>
+   <path d="M92 65 Q95 50 100 45 Q105 50 108 65 Q105 55 100 52 Q95 55 92 65 Z" fill="#ff5722"/>
+   <circle cx="90" cy="52" r="3" fill="#ff8f00" opacity="0.8"/>
+   <circle cx="110" cy="48" r="2.5" fill="#ff6f00" opacity="0.7"/>
+   <circle cx="95" cy="40" r="2" fill="#ffc107" opacity="0.6"/>
+   <circle cx="105" cy="38" r="2.5" fill="#ffab00" opacity="0.7"/>
+   <path d="M88 70 Q85 65 82 68 M112 70 Q115 65 118 68" fill="none" stroke="#ff3d00" stroke-width="1.5"/>
+   <text x="100" y="130" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#ffd54f">250,000</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#ff5722" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">QUARTER MILLION</text>
+</svg>

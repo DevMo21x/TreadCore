@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-five-minutes" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff3e0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffcc80;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-five-minutes">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#e65100" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-five-minutes)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#e65100" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-five-minutes)">
+    <circle cx="100" cy="92" r="33" fill="white" stroke="#ef6c00" stroke-width="3"/>
+   <circle cx="100" cy="92" r="27" fill="none" stroke="#fff3e0" stroke-width="1.5"/>
+   <text x="100" y="68" text-anchor="middle" font-family="Arial" font-size="8" fill="#bf360c">12</text>
+   <text x="130" y="96" text-anchor="middle" font-family="Arial" font-size="8" fill="#bf360c">3</text>
+   <text x="100" y="122" text-anchor="middle" font-family="Arial" font-size="8" fill="#bf360c">6</text>
+   <text x="70" y="96" text-anchor="middle" font-family="Arial" font-size="8" fill="#bf360c">9</text>
+   <line x1="100" y1="92" x2="100" y2="67" stroke="#e65100" stroke-width="2.5" stroke-linecap="round"/>
+   <line x1="100" y1="92" x2="116" y2="109" stroke="#ff9800" stroke-width="1.5" stroke-linecap="round"/>
+   <circle cx="100" cy="92" r="2.5" fill="#e65100"/>
+   <text x="100" y="143" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#e65100">5 MINUTES</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#e65100" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">FIVE MINUTES</text>
+</svg>

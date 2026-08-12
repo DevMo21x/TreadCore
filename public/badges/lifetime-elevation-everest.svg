@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-elevation-everest" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a237e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#283593;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-elevation-everest">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#ffd54f" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-elevation-everest)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#ffd54f" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-elevation-everest)">
+    <path d="M30 145 L70 90 L90 75 L100 45 L110 75 L130 90 L170 145 Z" fill="#5c6bc0"/>
+   <path d="M30 145 L70 90 L90 75 L100 45" fill="#7986cb"/>
+   <path d="M92 50 L100 45 L108 50 L104 48 L100 52 L96 48 Z" fill="white"/>
+   <path d="M80 80 L90 75 L100 78 L110 75 L120 80" fill="none" stroke="#e0e0e0" stroke-width="1" opacity="0.5"/>
+   <path d="M95 55 L100 45 L105 55" fill="none" stroke="#ffd54f" stroke-width="1"/>
+   <path d="M95 55 L98 53 L101 56 L104 52 L105 55" fill="none" stroke="#ff5722" stroke-width="1"/>
+   <text x="100" y="120" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">8,849m</text>
+   <text x="100" y="135" text-anchor="middle" font-family="Arial" font-size="8" fill="#ffd54f">TOP OF THE WORLD</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#ffd54f" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">EVEREST SUMMITEER</text>
+</svg>

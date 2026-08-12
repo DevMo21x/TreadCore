@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-duration-three-day-dedication" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0f2f1;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#b2dfdb;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-duration-three-day-dedication">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#004d40" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-duration-three-day-dedication)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#004d40" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-duration-three-day-dedication)">
+    <rect x="70" y="60" width="8" height="60" rx="3" fill="#00897b"/>
+   <rect x="88" y="60" width="8" height="60" rx="3" fill="#00897b"/>
+   <rect x="106" y="60" width="8" height="60" rx="3" fill="#00897b"/>
+   <path d="M65 130 Q92 140 118 130" fill="none" stroke="#ffd54f" stroke-width="3"/>
+   <text x="100" y="148" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#004d40">72 HOURS</text>
+   <circle cx="72" cy="55" r="3" fill="#4db6ac"/>
+   <circle cx="92" cy="55" r="3" fill="#4db6ac"/>
+   <circle cx="112" cy="55" r="3" fill="#4db6ac"/>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#004d40" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">3 DAY DEDICATION</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-two-hundred-calories" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbe9e7;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffab91;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-two-hundred-calories">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#bf360c" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-two-hundred-calories)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#bf360c" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-two-hundred-calories)">
+    <path d="M78 125 L85 125" stroke="#5d4037" stroke-width="5" stroke-linecap="round" transform="rotate(-20 78 125)"/>
+   <path d="M122 125 L115 125" stroke="#5d4037" stroke-width="5" stroke-linecap="round" transform="rotate(20 122 125)"/>
+   <path d="M88 125 L112 125" stroke="#6d4c41" stroke-width="4" stroke-linecap="round"/>
+   <path d="M100 120 Q87 105 90 88 Q93 72 100 62 Q107 72 110 88 Q113 105 100 120 Z" fill="#d84315"/>
+   <path d="M100 117 Q90 104 93 90 Q96 78 100 70 Q104 78 107 90 Q110 104 100 117 Z" fill="#ff7043"/>
+   <path d="M100 112 Q94 102 96 92 Q98 83 100 78 Q102 83 104 92 Q106 102 100 112 Z" fill="#ffca28"/>
+   <text x="100" y="150" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#bf360c">200 CAL</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#bf360c" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">200 CALORIES</text>
+</svg>

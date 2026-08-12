@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg-lifetime-elevation-stratosphere" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d47a1;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1565c0;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="circle-clip-lifetime-elevation-stratosphere">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="95" fill="#64b5f6" opacity="0.3"/>
+  <circle cx="100" cy="100" r="90" fill="url(#bg-lifetime-elevation-stratosphere)"/>
+  <!-- Inner border -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#64b5f6" stroke-width="4"/>
+  <!-- Illustration -->
+  <g clip-path="url(#circle-clip-lifetime-elevation-stratosphere)">
+    <path d="M0 130 Q50 120 100 125 Q150 130 200 125 L200 200 L0 200 Z" fill="#1976d2"/>
+   <path d="M0 135 Q50 128 100 132 Q150 136 200 130" fill="none" stroke="#64b5f6" stroke-width="1.5" opacity="0.6"/>
+   <path d="M20 120 Q100 110 180 118" fill="none" stroke="#90caf9" stroke-width="1" opacity="0.4"/>
+   <circle cx="100" cy="70" r="3" fill="white"/>
+   <path d="M100 73 L100 85" stroke="white" stroke-width="1.5"/>
+   <path d="M95 80 L100 85 L105 80" fill="none" stroke="white" stroke-width="1.5"/>
+   <circle cx="60" cy="145" r="1" fill="white" opacity="0.5"/>
+   <circle cx="80" cy="143" r="1" fill="white" opacity="0.5"/>
+   <circle cx="100" cy="141" r="1" fill="white" opacity="0.5"/>
+   <circle cx="120" cy="139" r="1" fill="white" opacity="0.5"/>
+   <circle cx="140" cy="137" r="1" fill="white" opacity="0.5"/>
+   <text x="100" y="105" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="white">20,000m</text>
+   <text x="100" y="145" text-anchor="middle" font-family="Arial" font-size="8" fill="#90caf9">STRATOSPHERE</text>
+  </g>
+  <!-- Label banner -->
+  <rect x="20" y="160" width="160" height="28" rx="14" fill="#64b5f6" opacity="0.85"/>
+  <text x="100" y="179" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">STRATOSPHERE SEEKER</text>
+</svg>
