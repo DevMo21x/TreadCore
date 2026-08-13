@@ -5,6 +5,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-cyan)
 ![Drizzle ORM](https://img.shields.io/badge/Drizzle_ORM-0.45-yellow)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 TreadCore is a modern, high-performance web application designed to serve as the frontend interface for smart treadmills. It features a stunning "hyper-grid" aesthetic, real-time data synchronization via MQTT, and comprehensive user and administrative capabilities.
 
@@ -117,4 +118,4 @@ We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) to 
 
 ## 📄 License
 
-This project is intended for educational purposes as part of a web development curriculum.
+This project is licensed under the [MIT License](LICENSE).
